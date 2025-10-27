@@ -1,0 +1,83 @@
+.rectangle {
+  padding-top: 115px;
+  padding-bottom: 70px;
+  background-color: #f3a917;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__info {
+    width: 700px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 167%;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  &__check {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    span {
+      width: 70px;
+      height: 2px;
+      background-color: white;
+    }
+    img {
+      width: 50px;
+    }
+  }
+  &__descr {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    margin-top: 20px;
+  }
+  &__reg {
+    text-align: center;
+    font-size: 12px;
+  }
+  &__reg-bold {
+    font-weight: 700;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    margin: 0 auto;
+    margin-top: 60px;
+    cursor: pointer;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rectangle {
+    &__info {
+      width: 40%;
+      text-align: left;
+    }
+  }
+}

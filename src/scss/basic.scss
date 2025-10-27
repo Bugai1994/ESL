@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1520px;
+  }
+}

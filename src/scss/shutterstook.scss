@@ -1,0 +1,126 @@
+.shutterstook {
+  background: url(/src/img/shutterstock_1684693219\ 1.png) center center / cover
+    no-repeat;
+  min-height: 100vh;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f3a917;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &__info {
+    margin-top: 268px;
+    width: 703px;
+  }
+  &__img {
+    width: 191px;
+    padding-bottom: 35px;
+  }
+  &__title {
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+    padding-bottom: 25px;
+  }
+  &__text {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+  }
+  &__buttons {
+    display: flex;
+    gap: 35px;
+    margin-top: 220px;
+  }
+  &__btn {
+    border: 2px solid #f3a917;
+    background-color: #020106;
+    padding: 15px 20px;
+    width: 246px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: #f3a917;
+        color: #020106;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+    .shutterstook {
+        &__nav {
+            width: 340px;
+            padding-bottom: 20px;
+        }
+        &__logo {
+            width: 58px;
+        }
+        &__link {
+           img {
+            width: 20px;
+           }
+        }
+        &__info {
+            margin-top: 168px;
+            width: 503px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+        &__buttons {
+            margin-top: 120px;
+        }
+        &__btn {
+            width: 160px;
+            height: 35px;
+            font-size: 11px;
+            padding: 8px 11px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+  .shutterstook {
+    &__nav {
+      width: auto;
+    }
+    &__info {
+      width: auto;
+      margin-top: 120px;
+    }
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+    &__title {
+      text-align: center;
+      font-size: 36px;
+    }
+    &__text {
+      font-size: 12px;
+      text-align: center;
+    }
+    &__buttons {
+      margin-top: 80px;
+      gap: 10px;
+      justify-content: center;
+    }
+    &__btn {
+      width: 140px;
+      font-size: 9px;
+    }
+  }
+}

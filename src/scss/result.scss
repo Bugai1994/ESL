@@ -1,0 +1,36 @@
+.result {
+  background-color: #020106;
+  padding-top: 141px;
+  padding-bottom: 150px;
+  margin-top: -2px;
+  &__title {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
+.tabs__buttons {
+  margin-top: 40px;
+  border-top: 2px solid #f3a917;
+  display: flex;
+  gap: 0;
+}
+.tab-btn {
+  border: 1px solid #f3a917;
+  padding: 15px 31px;
+  width: 152px;
+  height: 60px;
+  background-color: #020106;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
